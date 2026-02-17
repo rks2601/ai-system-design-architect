@@ -1,112 +1,100 @@
-AI System Design Architect
-A Generative AI-powered system that converts product ideas into scalable, production-ready system architectures using RAG, Vector Databases, and Cloud-native design principles.
+# 🧠 AI System Design Architect
 
-🚀 Project Overview
+> A Generative AI-powered system that converts product ideas into scalable, production-ready system architectures using RAG, Vector Databases, and Cloud-native design principles.
+
+---
+
+## 🚀 Project Overview
+
 AI System Design Architect is a full-stack GenAI application that helps engineers design scalable distributed systems.
 
 Given a product idea like:
 
-“Design a video streaming platform for 5 million users”
+> “Design a video streaming platform for 5 million users”
 
 The system generates:
 
-Functional Requirements
+- Functional Requirements  
+- Non-Functional Requirements  
+- High-Level Architecture  
+- Database Design  
+- Scaling Strategy  
+- Azure Cloud Mapping  
+- Trade-off Analysis  
 
-Non-Functional Requirements
+This project demonstrates real-world application of **RAG (Retrieval-Augmented Generation)** and cloud-integrated AI systems.
 
-High-Level Architecture
+---
 
-Database Design
+## 🎯 Problem Statement
 
-Scaling Strategy
-
-Azure Cloud Mapping
-
-Trade-off Analysis
-
-This project demonstrates real-world application of RAG (Retrieval-Augmented Generation) and cloud-integrated AI systems.
-
-🎯 Problem Statement
 System design requires:
 
-Distributed systems knowledge
-
-Cloud infrastructure understanding
-
-Scaling strategy experience
-
-Awareness of trade-offs
+- Distributed systems knowledge  
+- Cloud infrastructure understanding  
+- Scaling strategy experience  
+- Awareness of trade-offs  
 
 This project aims to build an AI-powered assistant that supports engineers in making structured, scalable architectural decisions.
 
-🏗 High-Level Architecture
-Diagram
-graph TD
+---
 
+# 🏗 High-Level Architecture
+
+```mermaid
+graph TD
     A[User] --> B[React Frontend]
     B --> C[Flask Backend API]
-
     C --> D[RAG Pipeline]
     D --> E[Embedding Model]
     D --> F[Vector Database]
     D --> G[LLM - Local / Azure OpenAI]
-
     F --> D
     E --> F
 🔍 RAG Pipeline Flow
-Diagram
+mermaid
+Copy code
 flowchart TD
-
-    A[User Query]
-    B[Generate Embedding]
-    C[Search Vector Database]
-    D[Retrieve Relevant Documents]
-    E[Inject Context into Prompt]
-    F[Send to LLM]
-    G[Generate Structured Architecture Output]
-
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    E --> F
-    F --> G
+    A[User Query] --> B[Generate Embedding]
+    B --> C[Search Vector Database]
+    C --> D[Retrieve Relevant Documents]
+    D --> E[Inject Context into Prompt]
+    E --> F[Send to LLM]
+    F --> G[Generate Structured Architecture Output]
 🛠 Tech Stack
 🖥 Frontend
 React
 
-REST API integration
+REST API Integration
 
-Dynamic result visualization
+Dynamic Result Visualization
 
 ⚙ Backend
 Python
 
-Flask (API layer)
+Flask (API Layer)
 
-Prompt orchestration
+Prompt Orchestration
 
-RAG pipeline integration
+RAG Pipeline Integration
 
 🧠 AI Layer
 Large Language Model (Local / Azure OpenAI)
 
-Embeddings generation
+Embedding Generation
 
-Vector similarity search
+Vector Similarity Search
 
-Context-aware prompt injection
+Context-Aware Prompt Injection
 
-☁ Cloud
-Microsoft Azure (Planned Deployment)
-
+☁ Cloud (Planned Deployment)
 Azure App Service
 
 Azure Blob Storage
 
-Azure OpenAI (future phase)
+Azure OpenAI (Future Phase)
 
-Azure AI Search / Vector DB
+Azure AI Search / Vector Database
 
 🧩 Core System Components
 1️⃣ React Frontend
@@ -155,15 +143,15 @@ This project demonstrates:
 
 Retrieval-Augmented Generation (RAG)
 
-Vector databases
+Vector Databases
 
-Prompt engineering
+Prompt Engineering
 
-Full-stack AI application design
+Full-Stack AI Application Design
 
-Cloud-native architecture planning
+Cloud-Native Architecture Planning
 
-Scalable GenAI system orchestration
+Scalable GenAI System Orchestration
 
 🗺 Roadmap
 Phase 1
