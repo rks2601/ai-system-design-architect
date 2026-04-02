@@ -1,10 +1,9 @@
 from flask import request, jsonify
 
 from app.services.architect_service import ArchitectService
-from app.models.mock_llm import MockLLM
+from app.llm.ollama_provider import OllamaProvider
 
-# Initialize dependencies
-llm = MockLLM()
+llm = OllamaProvider()
 service = ArchitectService(llm)
 
 
